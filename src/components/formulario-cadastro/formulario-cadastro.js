@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-const BASE_URL = 'http://localhost:5000'
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+const BASE_URL = 'http://localhost:5000'
 
 class FormularioCadastro extends React.Component {
     constructor(props) {

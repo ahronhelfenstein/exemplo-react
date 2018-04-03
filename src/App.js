@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/navbar';
 import Dashboard from './components/dashboard/dashboard';
 import FormularioCadastro from './components/formulario-cadastro/formulario-cadastro';
-import Navbar from './components/navbar/navbar';
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 class App extends Component {

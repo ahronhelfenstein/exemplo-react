@@ -1,6 +1,7 @@
 import React from 'react'
 import Listagem from '../listagem/listagem'
 import axios from 'axios'
+import { Progress } from 'reactstrap';
 const BASE_URL = 'http://localhost:5000'
 
 class Dashboard extends React.Component {
@@ -25,7 +26,7 @@ class Dashboard extends React.Component {
 
     render() {
         if (this.state.inLoading) {
-            return <span>carregando...</span>
+            return  <Progress animated color="info" value={100} />
         }
 
         return (
