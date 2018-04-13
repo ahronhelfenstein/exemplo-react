@@ -5,7 +5,7 @@ const allowCors = require('./cors')
 var app = express();
 var usuarios =[
     {id: 1,nome: "Ahron",sobrenome: "Helfenstein", email: "ahron.helfenstein@gmail.com"},
-    {id: 2,nome: "Ben",sobrenome: "Hur", email: "ben-hur@gmail.com"},        
+    {id: 2,nome: "Ramon",sobrenome: "Hur", email: "ben-hur@gmail.com"},        
 ]
 
 app.use(allowCors)

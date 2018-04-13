@@ -4,7 +4,10 @@ import HelloClass from './hello/hello'
 import Drop from './drop/drop'
 
 function Hello(props) {
-    return <h1>Hello, {props.name}</h1>;
+    return <div>Hello, {props.name}
+    <HelloClass name= {props.name}/>
+    </div>;
+
 }
 
 function tick() {
