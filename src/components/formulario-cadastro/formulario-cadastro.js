@@ -8,6 +8,7 @@ class FormularioCadastro extends React.Component {
         super(props)
         this.handleInputChange = this.handleInputChange.bind(this)
         this.salvar = this.salvar.bind(this)
+        this.state = {email: 'murillo'}
     }
 
 
@@ -28,7 +29,7 @@ class FormularioCadastro extends React.Component {
            onSubmit={this.salvar}>
             <FormGroup>
               <Label for="exampleEmail">Email</Label>
-              <Input type="email" name="email" id="exampleEmail" onChange={this.handleInputChange} placeholder="with a placeholder" />
+              <Input type="email" name="email" id="exampleEmail" value={this.state.email} onChange={this.handleInputChange}  placeholder="with a placeholder" />
             </FormGroup>
             <FormGroup>
               <Label for="exampleEmail">Nome</Label>
